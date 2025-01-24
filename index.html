@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body style = background-color:black; >
+<div style="text-align: center">
+  <img src="wallyswallofwisdom.jpg">
+</div>
+<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="sb-ubtrf37141921@business.example.com">
+
+  <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name" value="Quote-The quick brown fox.">
+  <input type="hidden" name="amount" value="9.99">
+  <input type="hidden" name="currency_code" value="USD">
+  <!-- add shipping 5 dollars base-->
+  <input type="hidden" name="shipping" value="5.00">
+  <!-- add shipping 5 dollars per extra-->
+  <input type="hidden" name="shipping2" value="5.00">
+
+
+
+
+
+
+<p style="color: white;display: flex;align-items: center;justify-content: center; font: 20px Arial; line-height : 2;">
+
+  Fred wrote:<br>
+  &emsp;
+  The quick brown fox jumped over the lazy dog.
+  <!-- Display the payment button. -->
+  <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" alt="Add to Cart">
+  <img alt="" width="1" height="1"
+       src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+</form>
+<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="sb-ubtrf37141921@business.example.com">
+
+  <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name" value="Quote-Why is the sky blue?">
+  <input type="hidden" name="amount" value="11.99">
+  <input type="hidden" name="currency_code" value="USD">
+  <!-- add shipping 5 dollars base-->
+  <input type="hidden" name="shipping" value="5.00">
+  <!-- add shipping 5 dollars per extra-->
+  <input type="hidden" name="shipping2" value="5.00">
+
+
+
+
+
+
+
+  <p style="color: white;display: flex;align-items: center;justify-content: center; font: 20px Arial; line-height : 2; transform: translateX(-110px)">
+
+  Helen wrote:<br>
+  &emsp;   Why is the sky blue?
+    <!-- Display the payment button. -->
+    <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" style="transform: translateX(225px)" alt="Add to Cart">
+    <img alt="" width="1" height="1" style="transform: translateX(110px);"
+         src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+</form>
+<p style="display:flex;justify-content: center;align-items: center;width: 100%">
+  <input type="button" value="Write on the Wall" onclick="location='editpost.html'">
+</p>
+
+
+</body>
+</html>

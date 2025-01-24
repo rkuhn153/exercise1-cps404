@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form-container {
+            width: 500px;
+            margin: 10px auto;
+            align-items: center;justify-content: center;
+
+            background-color: black;
+        }
+    </style>
+</head>
+<body style = background-color:black;>
+<div style="text-align: center">
+    <img  src="wallyswallofwisdom.jpg">
+</div>
+<!--start of form for previewpage.html-->
+<form class = "form-container" method = "get" action = "previewpage.html">
+    <table >
+        <tr>
+            <td><label style="color: white" for="name">Your name:</label></td>
+            <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td><label style="color: white" for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input  type="checkbox" id = "displayaddress" name = "displayaddress" checked>
+                <label style="color: white" for="displayaddress">Display address</label>
+            </td>
+        </tr>
+        <tr>
+            <!--Radio clarification-->
+            <td><label style="color: white">Clarification</label></td>
+            <td><input type="radio" id = "clarificationFreshman" name="clarification" value = "Freshman" >
+                <label style="color: white" for="clarificationFreshman">Freshman</label>
+                <input type="radio" id = "clarificationSophomore" name="clarification" value = "Sophomore" >
+                <label style="color: white" for="clarificationSophomore">Sophomore</label>
+                <input type="radio" id = "clarificationJunior" name="clarification" value = "Junior" checked>
+                <label style="color: white" for="clarificationJunior">Junior</label>
+                <input type = "radio" id = "clarificationSenior" name="clarification" value = "Senior" >
+                <label style="color: white" for="clarificationSenior">Senior</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label style="color: white" for="wordsofwisdom">Your words of wisdom:</label></td>
+            <td><label>
+                <textarea id="wordsofwisdom" name="wordsofwisdom" rows="8" cols="65"></textarea>
+            </label>
+            </td>
+        </tr>
+        <tr>
+            <!--category dropdown selector-->
+            <td> <label style="color: white" for="category">Category</label></td>
+            <td>
+                <select id="category" name="category">
+                    <option value="LOVE"  selected>Love</option>
+                    <option value="CS">Computer Support</option>
+                    <option value="DL">Dorm Life</option>
+                    <option value="FAM">Family</option>
+                    <option value="FOOD">Food</option>
+                </select>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit" value = "Continue">Continue</button>
+                <button type="button" value = "Cancel" onclick="location='index.html'">Cancel</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
